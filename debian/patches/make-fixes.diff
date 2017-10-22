@@ -32,9 +32,9 @@
 +
  libcommon_la_LIBADD = \
 +  $(EXTRA_LIBDL) \
-   -lcrypto \
-   -lssl \
-   -lpthread
+   -lpthread \
+   $(OPENSSL_LIBS) \
+   $(DLOPEN_LIBS)
 --- a/configure.ac
 +++ b/configure.ac
 @@ -246,6 +246,14 @@ AC_CHECK_HEADER([X11/extensions/Xrandr.h

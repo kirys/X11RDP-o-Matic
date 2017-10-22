@@ -28,40 +28,4 @@
  EndSection
  
  Section "Module"
---- a/xrdp/xrdp.ini
-+++ b/xrdp/xrdp.ini
-@@ -144,16 +144,6 @@ tcutils=true
- # for debugging xrdp, add following line to section xrdp1
- # chansrvport=/tmp/.xrdp/xrdp_chansrv_socket_7210
-
--[X11rdp]
--name=X11rdp
--lib=libxup.so
--username=ask
--password=ask
--ip=127.0.0.1
--port=-1
--xserverbpp=24
--code=10
--
- [Xorg]
- name=Xorg
- lib=libxup.so
-@@ -164,6 +154,16 @@ port=-1
- xserverbpp=24
- code=20
-
-+[X11rdp]
-+name=X11rdp
-+lib=libxup.so
-+username=ask
-+password=ask
-+ip=127.0.0.1
-+port=-1
-+xserverbpp=24
-+code=10
-+
- [Xvnc]
- name=Xvnc
- lib=libvnc.so
 

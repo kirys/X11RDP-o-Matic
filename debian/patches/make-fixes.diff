@@ -3,7 +3,7 @@
 
 --- a/Makefile.am
 +++ b/Makefile.am
-@@ -24,6 +24,7 @@ SUBDIRS = \
+@@ -55,6 +55,7 @@ SUBDIRS = \
    mc \
    $(NEUTRINORDPDIR) \
    libxrdp \

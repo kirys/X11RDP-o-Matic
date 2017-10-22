@@ -483,6 +483,7 @@ alter_xrdp_source()
   # do not use dpkg-source to apply patches because it doesn't accept any fuzz
   while read p
   do
+   echo running $p
     patch \
       -d "${WRKDIR}/xrdp" \
       -p1 --batch --forward --unified  --version-control never \

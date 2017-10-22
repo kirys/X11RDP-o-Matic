@@ -486,7 +486,7 @@ alter_xrdp_source()
     patch \
       -d "${WRKDIR}/xrdp" \
       -p1 --batch --forward --unified  --version-control never \
-      --remove-empty-files --backup < "${BASEDIR}/debian/patches/${p}" \
+      --remove-empty-files -l --backup < "${BASEDIR}/debian/patches/${p}" \
       >> $BUILD_LOG 2>&1 || error_exit
   done < "${BASEDIR}/debian/patches/series"
 }

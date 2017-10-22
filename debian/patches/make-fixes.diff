@@ -3,7 +3,7 @@
 
 --- a/Makefile.am
 +++ b/Makefile.am
-@@ -55,6 +55,7 @@ SUBDIRS = \
+@@ -54,6 +54,7 @@ SUBDIRS = \
    mc \
    $(NEUTRINORDPDIR) \
    libxrdp \
@@ -19,7 +19,7 @@
    $(XRDPVRDIR)
 --- a/common/Makefile.am
 +++ b/common/Makefile.am
-@@ -49,7 +49,12 @@ libcommon_la_SOURCES = \
+@@ -56,7 +56,12 @@ libcommon_la_SOURCES = \
    trans.h \
    $(PIXMAN_SOURCES)
 

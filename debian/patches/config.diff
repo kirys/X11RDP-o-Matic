@@ -3,12 +3,11 @@
 
 --- a/sesman/sesman.ini
 +++ b/sesman/sesman.ini
-@@ -88,8 +88,7 @@ param=-noreset
- param=-ac
+@@ -73,7 +73,6 @@ param=-noreset
  param=-nolisten
  param=tcp
 -param=-logfile
--param=/dev/null
+-param=.xorgxrdp.%s.log
 +param=-retro
  
  [Chansrv]
